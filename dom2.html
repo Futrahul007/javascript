@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	
+</head>
+<body>
+	  <p id="rahul">Rahul</p>
+	  <p id="rahul">Raj</p>
+	  <p id="rahul">Raj1</p>
+	  <p id="rahul">Raj2</p>
+
+	  <!--how to access elements by ID -->
+	  <script type="text/javascript">
+	  	var a = document.getElementById("raj").innerHTML;
+	  	      document.write(a)
+	  </script>
+
+	  <!--how to access elements by class -->
+	  <script type="text/javascript">
+	  	var b = document.getElementsByClassName("rahul")[2].innerHTML;
+	  	      document.write(b)
+	  </script>
+
+	  <!--how to access elements by TagName -->
+	  <script type="text/javascript">
+	  	var tag = document.getElementsByTagName("p").innerHTML;
+	  	      document.write(tag)
+	  	      console.log(tag);
+	  </script>
+
+	  <!--how to access elements by TagName -->
+	  <script type="text/javascript">
+	  	var p = document.queryselector('p').innerHTML;
+	  	      document.write(p)
+	  	    
+	  </script>
+
+</body>
+</html>
