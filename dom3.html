@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	
+</head>
+<body>
+	   <p id="rahul">Rahul</p>
+	  <p class="welcome">Raj</p>
+	  <p class="welcome">Raj1</p>
+	  <p class="welcome">Raj2</p>
+
+	  <ul>
+	  	<li>like</li>
+	  	<li>share</li>
+	  	<li>subscribe</li>
+	  </ul>
+
+	  <!-- access children of a body -->
+	  <script type="text/javascript">
+	  	var child =document.body.children;
+	  	console.log(child);
+	  </script>
+
+	  <!-- access a new child of a body -->
+	   <script type="text/javascript">
+	   	var para = document.createElement("p");
+	   	var textNode = document.createTextNode("This is a new para.");
+	   	para.appendChild(textNode);
+	   	console.log(para);
+	   	document.body.appendChild(para);
+	   </script>
+
+	   <!-- access firstchild and lastchild -->
+	     <script type="text/javascript">
+	     	
+	     	var list=document.querySelector("ul");
+	     	console.log(list);
+
+	     	console.log(list.firstchild);
+	     	console.log(list.lastchild);
+
+	     	var firstsiblings = rahul.nextElementSibling.nextElementSibling;
+	     	console.log(firstsiblings);
+	     	console.log(list.parentNode);
+	     </script>
+</body>
+</html>
