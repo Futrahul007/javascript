@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	
+
+</head>
+<body>
+	    <button onclick="clearInterval(clock)">Click Me</button><br><br>
+	    <p id="showClock"> </p>
+
+	    <script type="text/javascript">
+	    	var clock = setInterval(clocktiming,1000)
+
+	    	function clocktiming() {
+	    		var d = new Date();
+	    		var rahul = d.toLocaleTimeString();
+	    		document.getElementById('showClock').innerHTML = rahul;
+
+	    	}
+	    </script>
+</body>
+</html>
